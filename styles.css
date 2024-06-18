@@ -1,26 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+PL:wght@100..400&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans',sans-serif;
 }
 body{
     height: 100vh;
     background-color: var(--primary-color);
     background-size: cover;
     background-position: center;
+    font-family: "Playwrite PL", cursive;
 }
 li{
     list-style: none;
 }
 a{
     text-decoration: none;
-    color: #656464;
+    color: #8fc1ff;
     font-size: 1rem;
     font-size: bold;
 }
 a:hover{
-    color:#77709ba7;
+    color:blue;
+    
 }
 header{
     position: relative;
@@ -48,9 +51,30 @@ header{
 }
 :root{
     --primary-color:white;
-    --secondar-color:black;
+    --secondary-color:black;
 }
 .dark_theme{
     --primary-color:black;
     --secondary-color:white;
+}
+.about{
+    margin-top: 8%;
+    max-width: 600px;
+    color: var(--secondary-color);
+    margin-left: 100px;
+}
+.about p{
+    line-height: 28px;
+    font-style: italic;
+}
+.img{
+    width: 400px;
+    position: absolute;
+    right: 15%;
+    top: 18%;
+    z-index: 2;
+    
+}
+.clr{
+    color: blue;
 }
