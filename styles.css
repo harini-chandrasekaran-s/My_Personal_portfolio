@@ -6,8 +6,7 @@
 }
 body{
     height: 100vh;
-    background-color: white;
-    background-image: url('background.jpg');
+    background-color: var(--primary-color);
     background-size: cover;
     background-position: center;
 }
@@ -42,4 +41,16 @@ header{
 .navbar .links{
     display: flex;
     gap: 2rem;
+}
+#icon{
+    width: 30px;
+    cursor: pointer;
+}
+:root{
+    --primary-color:white;
+    --secondar-color:black;
+}
+.dark_theme{
+    --primary-color:black;
+    --secondary-color:white;
 }

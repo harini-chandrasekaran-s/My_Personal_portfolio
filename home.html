@@ -9,7 +9,7 @@
 <body>
    <header>
     <div class="navbar">
-        <div class="logo"><a href="#"><img src="Harini2.png"></a></div>
+        <div class="logo" ><a href="#"><img src="Harini2.png" id="logo1"></a></div>
         <ul class="links">
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -17,8 +17,24 @@
             <li><a href="#blogs">Blogs</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
+        <img src="moon.png" id="icon">
         <a href="#" class="action_btn">HIRE ME</a>
     </div>
    </header> 
+   <script>
+    var dark_theme= document.getElementById("icon");
+    var pic= document.getElementById("logo1");
+    dark_theme.onclick= function(){
+        document.body.classList.toggle("dark_theme");
+        if(document.body.classList.contains("dark_theme")){
+             pic.src="h1.png";
+        }
+        else{
+            pic.src="Harini2.png";
+        }
+    }
+
+   </script>
 </body>
+
 </html>
